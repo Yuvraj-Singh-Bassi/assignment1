@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tabs Output</title>
+</head>
+<body style="font-family:Arial, sans-serif; padding:20px;">
+
+  <!-- Header with student info -->
+  <header style="border-bottom:2px solid black; padding-bottom:10px; margin-bottom:20px;">
+    <strong>Yuvraj Singh Bassi (21910858)</strong>
+  </header>
+
+  <h1>Generated Tabs</h1>
+  <div><button onclick="select_tabs_1756382102954(0)" style="margin:4px;padding:6px 10px;border:1px solid #999;border-radius:4px;cursor:pointer;background:#ddd">Step 1</button><button onclick="select_tabs_1756382102954(1)" style="margin:4px;padding:6px 10px;border:1px solid #999;border-radius:4px;cursor:pointer;background:#f9f9f9">Step 2</button><button onclick="select_tabs_1756382102954(2)" style="margin:4px;padding:6px 10px;border:1px solid #999;border-radius:4px;cursor:pointer;background:#f9f9f9">Step 3</button><button onclick="select_tabs_1756382102954(3)" style="margin:4px;padding:6px 10px;border:1px solid #999;border-radius:4px;cursor:pointer;background:#f9f9f9">Step 4</button></div>
+  <div id="tabs_1756382102954_panel_0" style="border:1px solid #ccc;margin-top:10px;padding:10px;">Step 1 details...</div><div id="tabs_1756382102954_panel_1" style="border:1px solid #ccc;margin-top:10px;padding:10px;display:none">Step 2 details...</div><div id="tabs_1756382102954_panel_2" style="border:1px solid #ccc;margin-top:10px;padding:10px;display:none">Step 3 details...</div><div id="tabs_1756382102954_panel_3" style="border:1px solid #ccc;margin-top:10px;padding:10px;display:none">Step 4 details...</div>
+
+  <!-- Footer -->
+  <footer style="border-top:2px solid black; margin-top:30px; padding-top:10px; text-align:center;">
+    © 2025 Yuvraj Singh Bassi (21910858)
+  </footer>
+
+  <script>
+    function select_tabs_1756382102954(i){
+      var buttons=document.querySelectorAll('button');
+      var panels=document.querySelectorAll('div[id^="tabs_1756382102954_panel_"]');
+      buttons.forEach((b,idx)=>b.style.background=(idx===i)?'#ddd':'#f9f9f9');
+      panels.forEach((p,idx)=>p.style.display=(idx===i)?'block':'none');
+    }
+  </script>
+</body>
+</html>
