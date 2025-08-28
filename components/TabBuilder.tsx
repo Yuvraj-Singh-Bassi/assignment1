@@ -56,16 +56,16 @@ export default function TabBuilder() {
     setTabs(newTabs)
   }
 
-  // Generate standalone HTML
+  // ✅ Generate standalone HTML
   const generateOutput = () => {
-    const uid = `tabs-${Date.now()}`
+    const uid = `tabs_${Date.now()}` // use underscore
 
     const buttons = tabs.map((t, i) =>
       `<button onclick="select_${uid}(${i})" style="margin:4px;padding:6px 10px;border:1px solid #999;border-radius:4px;cursor:pointer;background:${i===0?'#ddd':'#f9f9f9'}">${t.title}</button>`
     ).join('')
 
     const panels = tabs.map((t, i) =>
-      `<div id="${uid}-panel-${i}" style="border:1px solid #ccc;margin-top:10px;padding:10px;${i===0?'':'display:none'}">${t.content}</div>`
+      `<div id="${uid}_panel_${i}" style="border:1px solid #ccc;margin-top:10px;padding:10px;${i===0?'':'display:none'}">${t.content}</div>`
     ).join('')
 
     const html = `<!DOCTYPE html>
@@ -93,7 +93,7 @@ export default function TabBuilder() {
   <script>
     function select_${uid}(i){
       var buttons=document.querySelectorAll('button');
-      var panels=document.querySelectorAll('div[id^="${uid}-panel-"]');
+      var panels=document.querySelectorAll('div[id^="${uid}_panel_"]');
       buttons.forEach((b,idx)=>b.style.background=(idx===i)?'#ddd':'#f9f9f9');
       panels.forEach((p,idx)=>p.style.display=(idx===i)?'block':'none');
     }

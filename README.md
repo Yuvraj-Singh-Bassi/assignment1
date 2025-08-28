@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Assignment 1 – Tabs Generator (Next.js)
 
-## Getting Started
+**Name:** Yuvraj Singh Bassi  
+**Student Number:** 21910858  
 
-First, run the development server:
+---
 
+## 📌 Project Overview
+This project is part of Assignment 1 for LTU. It is a **Next.js (App Router + TypeScript)** application that generates **HTML5 + JS code with inline CSS** for a Tabs interface.  
+
+The generated code can be copied into a file like `Hello.html` and opened directly in a web browser.  
+
+---
+
+## ✨ Features
+- **Navigation Bar** with links:
+  - Tabs (Home)
+  - Escape Room (placeholder)
+  - Coding Races (placeholder)
+  - Court Room (placeholder)
+  - About (with video embed)
+- **Header & Footer** with student info
+- **Hamburger Menu** with CSS transform (☰ → ✖)  
+- **Dark/Light Mode toggle**  
+- **Tabs Page**:
+  - Create up to **15 tabs**
+  - Tabs headings can change
+  - Tabs content can be updated
+  - Tabs are saved in **localStorage**
+- **Output Button**:
+  - Generates standalone HTML with inline CSS + JS
+  - Can be copied and pasted into `Hello.html`
+- **About Page**:
+  - Shows student name + number
+  - Embedded video walkthrough (YouTube Unlisted)
+- **Accessibility**:
+  - ARIA labels for screen reader compatibility
+  - Contrast-friendly themes
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+git clone https://github.com/Yuvraj-Singh-Bassi/assignment1.git
+cd assignment1
